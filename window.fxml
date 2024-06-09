@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity"
+	maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="549.0" prefWidth="863.0"
+	style="-fx-background-color: LAVENDERBLUSH;"
+	xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.WindowController">
+	<children>
+		<Label fx:id="label" layoutX="74.0" layoutY="32.0"
+			prefHeight="37.0" prefWidth="457.0"
+			text="you should always feel pretty">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="33.0" />
+			</font>
+		</Label>
+		<ImageView fx:id="image" fitHeight="83.0" fitWidth="126.0"
+			layoutX="553.0" layoutY="14.0" pickOnBounds="true"
+			preserveRatio="true">
+			<image>
+				<Image url="@dania/Mysql/src/application/alaqa.png" />
+			</image>
+		</ImageView>
+		<Button fx:id="products" layoutX="102.0" layoutY="158.0"
+			mnemonicParsing="false" onAction="#allProducts" prefHeight="32.0"
+			prefWidth="198.0" style="-fx-background-color: pink;"
+			text="All products ">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="17.0" />
+			</font>
+		</Button>
+		<Button fx:id="displayProducts" layoutX="100.0" layoutY="250.0"
+			mnemonicParsing="false" onAction="#displayProducts" prefHeight="32.0"
+			prefWidth="198.0" style="-fx-background-color: pink;"
+			text="Display products">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="stockedProducts" layoutX="98.0" layoutY="350.0"
+			mnemonicParsing="false" onAction="#stockedProducts" prefHeight="31.0"
+			prefWidth="198.0" style="-fx-background-color: pink;"
+			text="Stocked products">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="19.0" />
+			</font>
+		</Button>
+		<Button fx:id="defectProducts" layoutX="97.0" layoutY="447.0"
+			mnemonicParsing="false" onAction="#defectProducts" prefHeight="31.0"
+			prefWidth="198.0" style="-fx-background-color: pink;"
+			text="Defect Products !!">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="categories" layoutX="362.0" layoutY="158.0"
+			mnemonicParsing="false" onAction="#categories" prefHeight="32.0"
+			prefWidth="188.0" style="-fx-background-color: pink;"
+			text="Categories">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="shop" layoutX="365.0" layoutY="253.0"
+			mnemonicParsing="false" onAction="#shop" prefHeight="31.0"
+			prefWidth="188.0" style="-fx-background-color: pink;" text="The Shop">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="18.0" />
+			</font>
+		</Button>
+		<Button fx:id="sales" layoutX="366.0" layoutY="353.0"
+			mnemonicParsing="false" onAction="#salres" prefHeight="33.0"
+			prefWidth="188.0" style="-fx-background-color: pink;"
+			text="Youre sales">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="19.0" />
+			</font>
+		</Button>
+		<Button fx:id="warehouse" layoutX="369.0" layoutY="450.0"
+			mnemonicParsing="false" onAction="#warehouse" prefHeight="33.0"
+			prefWidth="188.0" style="-fx-background-color: pink;"
+			text="warehouse">
+			<font>
+				<Font name="Times New Roman Bold Italic" size="19.0" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

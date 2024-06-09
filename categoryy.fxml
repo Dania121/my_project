@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="categoryPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="347.0" prefWidth="582.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CategoryController">
+   <children>
+      <Label fx:id="category_label" layoutX="161.0" prefHeight="60.0" prefWidth="246.0" text="   category page">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="category_tv" layoutX="284.0" layoutY="59.0" opacity="0.93" prefHeight="238.0" prefWidth="290.0" style="-fx-background-color: LINEN;">
+        <columns>
+          <TableColumn fx:id="cid_column" prefWidth="72.0" text="   C_ID" />
+          <TableColumn fx:id="c_nameColumn" minWidth="0.0" prefWidth="208.66665649414062" text="Category Name" />
+        </columns>
+      </TableView>
+      <Label fx:id="insertName_label" layoutX="27.0" layoutY="96.0" prefHeight="18.0" prefWidth="184.0" text=" category name ">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nametinsertxt" layoutX="14.0" layoutY="114.0" prefHeight="25.0" prefWidth="224.0" />
+      <Button fx:id="update_btn" layoutX="76.0" layoutY="241.0" mnemonicParsing="false" onAction="#updateCategory" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: LINEN;" text="update">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="delet_btn" layoutX="77.0" layoutY="290.0" mnemonicParsing="false" onAction="#deleteCategory" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: LINEN;" text="Delete">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="best" layoutX="309.0" layoutY="316.0" mnemonicParsing="false" onAction="#bestSelling" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: LINEN;" text="The best-selling category this week" />
+      <Label fx:id="idinsertlbl" layoutX="36.0" layoutY="40.0" prefHeight="17.0" prefWidth="114.0" text="category ID">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idinserttxt" layoutX="27.0" layoutY="60.0" />
+      <Button fx:id="showProbtn" layoutX="414.0" layoutY="17.0" mnemonicParsing="false" onAction="#goToProductScreen" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: LINEN;" text="Show Products">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="insertCategoryBtn" layoutX="77.0" layoutY="187.0" mnemonicParsing="false" onAction="#insertCategory" prefHeight="29.0" prefWidth="85.0" style="-fx-background-color: LINEN;" text="Insert">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
